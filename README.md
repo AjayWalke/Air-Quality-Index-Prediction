@@ -3,6 +3,8 @@ Air Quality Index prediction for predicting the air quality index using the prev
 This includes the various models for the comparative analysis and best one selected for the predicting the output
 
 
-![Screenshot 2023-07-28 223808](https://github.com/AjayWalke/Air-Quality-Index-Prediction/assets/84366358/7ae70da6-e3bf-4c85-ba14-f411c5073f1c)
+![Screenshot 2023-07-28 223808](https://github.com/AjayWalke/Air-Quality-Index-Prediction/assets/84366358/acd5ba4e-b35f-44d9-a99e-078cc26f2af0)
 
-![Screenshot 2023-07-28 223817](https://github.com/AjayWalke/Air-Quality-Index-Prediction/assets/84366358/089250ca-7162-411f-a334-379d9dcbad7d)
+
+
+![Screenshot 2023-07-28 223817](https://github.com/AjayWalke/Air-Quality-Index-Prediction/assets/84366358/770dfd1a-6f6c-4b5d-bab6-da6fc10f35f7)
