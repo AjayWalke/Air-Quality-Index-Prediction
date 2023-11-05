@@ -26,6 +26,8 @@ def home():
 @app.route('/predict', methods=['POST'])
 def predict():
     if request.method == 'POST':
+        print(request.form)
+        city = request.form['city']
         t = int(request.form['T'])
         tm = int(request.form['TM'])
         tmm = int(request.form['Tm'])
