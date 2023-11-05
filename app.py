@@ -2,6 +2,7 @@
 from flask import Flask, render_template, request
 import pickle
 import numpy as np
+import requests
 
 app = Flask(__name__) 
 
@@ -69,8 +70,10 @@ def predict():
             data = np.array([[t, tm, tmm, slp, h, vv, v, vm]])
             my_prediction = classifier.predict(data)
             ans.append(my_prediction)
-
         print(ans);
+        temp = 'https://api.weatherbit.io/v2.0/forecast/airquality?'
+        res = requests.get(temp, params={city:city})
+        print(res)
         return render_template('result.html', prediction=ans)
 
 
