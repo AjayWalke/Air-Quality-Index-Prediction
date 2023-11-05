@@ -32,48 +32,43 @@ def predict():
         v = float(request.form['V'])
         vm = int(request.form['VM'])
         ans = []
+        print(city, request)
         if(city == 'pune'):
-            print(1)
             filename = './pkl_files/Pune.pkl'
             classifier = pickle.load(open(filename, 'rb'))
             data = np.array([[t, tm, tmm, slp, h, vv, v, vm]])
             my_prediction = classifier.predict(data)
-            ans.insert(my_prediction)
+            ans.append(my_prediction)
         elif(city == 'nagpur'):
-            print(2)
             filename = './pkl_files/Nagpur.pkl'
             classifier = pickle.load(open(filename, 'rb'))
             data = np.array([[t, tm, tmm, slp, h, vv, v, vm]])
             my_prediction = classifier.predict(data)
-            ans.insert(my_prediction)
+            ans.append(my_prediction)
         elif(city == 'delhi'):
-            print(3)
             filename = './pkl_files/Delhi.pkl'
             classifier = pickle.load(open(filename, 'rb'))
             data = np.array([[t, tm, tmm, slp, h, vv, v, vm]])
             my_prediction = classifier.predict(data)
-            ans.insert(my_prediction)
+            ans.append(my_prediction)
         elif(city == 'mumbai'):
-            print(4)
             filename = './pkl_files/Mumbai.pkl'
             classifier = pickle.load(open(filename, 'rb'))
             data = np.array([[t, tm, tmm, slp, h, vv, v, vm]])
             my_prediction = classifier.predict(data)
-            ans.insert(my_prediction)
+            ans.append(my_prediction)
         elif(city == 'chennai'):
-            print(4)
             filename = './pkl_files/Chennai.pkl'
             classifier = pickle.load(open(filename, 'rb'))
             data = np.array([[t, tm, tmm, slp, h, vv, v, vm]])
             my_prediction = classifier.predict(data)
-            ans.insert(my_prediction)
+            ans.append(my_prediction)
         elif(city == 'bangalore'):
-            print(5)
             filename = './pkl_files/Bangalore.pkl'
             classifier = pickle.load(open(filename, 'rb'))
             data = np.array([[t, tm, tmm, slp, h, vv, v, vm]])
             my_prediction = classifier.predict(data)
-            ans.insert(my_prediction)
+            ans.append(my_prediction)
 
         print(ans);
         return render_template('result.html', prediction=ans)
