@@ -71,10 +71,20 @@
             font-size: 14px;
             color: #999;
         }
+        .warning{
+            color: red;
+            font-size: x-large;
+            font-weight: bold;
+        }
+        .heading{
+            color: black;
+            font-size: 40px;
+            font-weight: 900;
+        }
     </style>
 </head>
 <body>
-    <h1>AQI and Pollutants Prediction</h1>
+    <h1 class="heading">AQI and Pollutants Prediction</h1>
     <form method="post" action="/predict">
         <label for="city">City:</label><br>
         <select type="string" id="city" name="city" required>
@@ -113,4 +123,4 @@
 
         <input type="submit" value="Predict">
     </form>
-    <p>Disclaimer: The above prediction is based on the given input data</p>
+    <p class="warning">Disclaimer: The above prediction is based on the given input data</p>
